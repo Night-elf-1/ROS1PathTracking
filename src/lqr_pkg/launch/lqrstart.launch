@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="lqr_pkg" type="lqrcontrol_" name="lqr_node" output="screen" />
+    <!--<node pkg="lqr_pkg" type="dlqrcontrol_" name="lqr_node" output="screen" />-->
+</launch>

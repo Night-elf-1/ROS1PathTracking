@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+	<include file="$(find classb_car_model)/launch/xacro_car.launch">
+		<arg name="x" value="0.0"/>
+		<arg name="y" value="0.0"/>
+		<arg name="z" value="0.0"/>
+		<arg name="urdf_robot_file" value="$(find classb_car_model)/urdf/carmodel_urdf.xacro"/>
+		<arg name="robot_name" value="classb_car"/>
+	</include>
+
+	<include file="$(find classb_car_model)/launch/control_car.launch">
+		<arg name="robot_name" value="classb_car"/>
+		<arg name="config_file" value="bcar_control.yaml"/>
+	</include>
+
+	<!--<include file="$(find waypoint_loader)/launch/waypoint_loader.launch"/>
+  	<include file="$(find waypoint_updater)/launch/waypoint_updater.launch"/>-->
+
+</launch>

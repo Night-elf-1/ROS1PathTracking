@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="purepursuit_pkg" type="splinepathNew_" name="splinepathNew_node" output="screen" />
+    <node pkg="purepursuit_pkg" type="purepursuit_practice" name="purepursuit_node" output="screen" />
+</launch>

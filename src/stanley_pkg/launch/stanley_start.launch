@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="stanley_pkg" type="splinepathNew_stanley" name="splinepathNew_stanley_node" output="screen" />
+    <node pkg="stanley_pkg" type="stanley_way_" name="stanley_node" output="screen" />
+</launch>
